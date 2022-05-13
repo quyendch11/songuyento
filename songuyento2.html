@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a =parseInt(prompt("hãy nhập số lượng só nguyên tố cần in ra"));
+    let n=1;
+    let demsnt = 0;
+    while(demsnt < a){
+        let i=2;
+        let songuyento = 1 ;
+        if (n===2) {
+            document.write(n+"<br>");
+            demsnt++;
+        }
+        else if(n>2) {
+            while (i < n) {
+                if (n % i === 0) {
+                    songuyento = 0;
+                    break;
+                }
+                i++;
+            }
+        if (songuyento === 1) {
+            document.write(n+ "<br>");
+            demsnt++;
+        }
+    }
+n++;
+    }
+</script>
+</body>
+</html>
